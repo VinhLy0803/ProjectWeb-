@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <a href="Trang_chủ.html" class="logo"><img src="image/logo.jpg" alt=""></a>
+        
+
+        <ul class="navbar">
+            <li><a href="Trang_chủ.html">Trang chủ</a></li>
+            <li><a href="Trinhtham.html">Trinh thám</a></li>
+            <li><a href="MC.html">Manga/Comic</a></li>
+            <li><a href="Khoahocvientuong.html">Khoa học viễn tưởng</a></li>
+        </ul>
+
+        <div class="container">
+            <form action="https://www.google.com/search" method="get" class="search-bar">
+              <input type="text" placeholder="Tìm kiếm..." name="search">
+              <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+
+            <div class="login">
+                <a href="Login.html"><i class="fa-solid fa-user"></i></a>
+            </div>
+
+            <div class="cart">
+                <a href="Cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+        </div>
+        
+        <div class="menu" id="menu-icon"><i class="fa-solid fa-bars"></i></div>
+    </header>
+
+    <!--Main-->
+    <section>
+        <div class="main" id="main">
+            <div class="main_tag">
+                <h1>CHÀO MỪNG ĐẾN VỚI<br><span>NHÀ SÁCH</span></h1>
+
+                <p>
+                    Xin chào các bạn, chúng tôi rất hân hạnh khi các bạn truy cập
+                    và mua sản phẩm ở trang web. Hãy truy cập nhiều hơn để có thể 
+                    cập nhật những thông báo về sự xuất hiện của các cuốn sách mới
+                    , những ưu đãi đặc biệt và các trương trình khác nữa nhé!
+                </p>
+                <a href="" class="main_btn">Chi tiết</a>
+            </div>
+            
+            <div class="main_img">
+                <img src="image/img_center.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+
+    <!--Dịch vụ-->
+
+    <div class="services">
+        <div class="services_box">
+            
+            <div class="services_card">
+                <i class="fa-solid fa-truck-fast"></i>
+                <h3>Giao hàng nhanh chóng</h3>
+                <p>Dịch vụ giao hàng nhanh chóng và thông suốt.</p>
+            </div>
+
+            <div class="services_card">
+                <i class="fa-solid fa-headset"></i>
+                <h3>Dịch vụ luôn 24/7</h3>
+                <p>Luôn túc trực thường xuyên hỗ trợ khách hàng.</p>
+            </div>
+
+            <div class="services_card">
+                <i class="fa-solid fa-tag"></i>
+                <h3>Giá cả phải chăng</h3>
+                <p>Giá của sản phẩm phù hợp với tất cả mọi người.</p>
+            </div>
+
+            <div class="services_card">
+                <i class="fa-solid fa-lock"></i>
+                <h3>Thanh toán an toàn</h3>
+                <p>Thanh toán chuyển khoản hoặc bằng tiền mặt.</p>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!--Giới thiệu-->
+    <div class="about">
+        <div class="about_image">
+            <img src="image/Nến_và_sách.jpg" alt="">
+        </div>
+        <div class="about_tag">
+            <h1>Giới thiệu</h1>
+            <p>
+                Xin chào các bạn, dưới đây là một số cuốn sách nổi bật và những
+                cuốn sách mới đã được ra mắt, các bạn hãy khám phá nhé.
+            </p>
+            <a href="#" class="about_btn">Chi tiết</a>
+        </div>
+    </div>
+
+
+    <!--Sách nổi bật-->
+    <div class="featured_books">
+
+        <h1>Nổi bật</h1>
+
+        <div class="swiper mySwiper featured_book_box">
+            <div class="swiper-wrapper">
+                <!--card1-->
+                <div class="featured_book_card swiper-slide">
+                    <div class="featured_book_img">
+                        <img src="image/SILCBC_TT.jpg" alt="">
+                    </div>
+        
+                    <div class="featured_book_tag">
+                        <h2>Sự im lặng của bầy cừu</h2>
+                        <p class="writer">Tác giả: Thomas Harris</p>
+                        <div class="categories">Thể loại: Thần bí, Tâm lý, Trinh thám</div>
+                        <p class="book_price">92.000đ</p>
+                        <div class="featured_book_icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <a href="dp1.html" class="f_btn">Chi tiết</a>
+                    </div>
+                </div>
+
+                <!--card2-->
+                <div class="featured_book_card swiper-slide">
+                    <div class="featured_book_img">
+                        <img src="image/BDH_TT.jpg" alt="">
+                    </div>
+        
+                    <div class="featured_book_tag">
+                        <h2>Bạch dạ hành</h2>
+                        <p class="writer">Tác giả: Higashino Keigo</p>
+                        <div class="categories">Thể loại: Hư cấu, Thần bí, Trinh thám</div>
+                        <p class="book_price">180.000đ</p>
+                        <div class="featured_book_icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <a href="" class="f_btn">Chi tiết</a>
+                    </div>
+                </div>
+
+
+                <!--card3-->
+                <div class="featured_book_card swiper-slide">
+                    <div class="featured_book_img">
+                        <img src="image/JKC228_MG.jpg" alt="">
+                    </div>
+        
+                    <div class="featured_book_tag">
+                        <h2>Chú thuật hồi chiến C.228</h2>
+                        <p class="writer">Tác giả: Akutami Gege</p>
+                        <div class="categories">Thể loại: Phiêu lưu, Siêu nhiên, Manga</div>
+                        <p class="book_price">60.000đ</p>
+                        <div class="featured_book_icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <a href="" class="f_btn">Chi tiết</a>
+                    </div>
+                </div>
+
+
+                <!--card4-->
+                <div class="featured_book_card swiper-slide">
+                    <div class="featured_book_img">
+                        <img src="image/TT_KHVT.jpg" alt="">
+                    </div>
+        
+                    <div class="featured_book_tag">
+                        <h2>Tam thể</h2>
+                        <p class="writer">Tác giả: Lưu Từ Hân</p>
+                        <div class="categories">Thể loại: Thần bí, phiêu lưu, Khoa học viễn tưởng</div>
+                        <p class="book_price">275.000đ</p>
+                        <div class="featured_book_icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <a href="" class="f_btn">Chi tiết</a>
+                    </div>
+                </div>
+
+
+                <!--card5-->
+                <div class="featured_book_card swiper-slide">
+                    <div class="featured_book_img">
+                        <img src="image/NHOTCVT_KHVT.jpg" alt="">
+                    </div>
+        
+                    <div class="featured_book_tag">
+                        <h2>Nhà hàng ở tận cùng vũ trụ</h2>
+                        <p class="writer">Tác giả: Douglas Adams</p>
+                        <div class="categories">Thể loại: Hành động, Khoa học viễn tưởng</div>
+                        <p class="book_price">63.000đ</p>
+                        <div class="featured_book_icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <a href="" class="f_btn">Chi tiết</a>
+                    </div>
+                </div>
+
+
+                <!--card6-->
+                <div class="featured_book_card swiper-slide">
+                    <div class="featured_book_img">
+                        <img src="image/Batman.jpg" alt="">
+                    </div>
+        
+                    <div class="featured_book_tag">
+                        <h2>Batman (2016) #1</h2>
+                        <p class="writer">Tác giả: Tom king</p>
+                        <div class="categories">Thể loại: Phiêu lưu, Hành động, Comic</div>
+                        <p class="book_price">65.000đ</p>
+                        <div class="featured_book_icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <a href="" class="f_btn">Chi tiết</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+
+
+        <!--Sách mới-->
+    <div class="arrivals">
+        <h1>Các cuốn sách mới</h1>
+
+        <div class="swiper mySwiper arrivals_box">
+            <div class="swiper-wrapper">
+                <!--arrival1-->
+                <div class="arrivals_card swiper-slide">
+                    <div class="arrivals_image">
+                        <img src="image/ke-tam-xuong_TT.jpg" alt="">
+                    </div>
+                    <div class="arrivals_tag">
+                        <p>Kẻ tầm xương</p>
+                        <p class="writer">Tác giả: Jeffery Deaver</p>
+                        <div class="categories">Thể loại: Hư cấu, Thần bí, Trinh thám</div>
+                        <p class="book_price">65.000đ</p>
+                        <div class="arrivals_icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <a href="#" class="arrivals_btn">Chi tiết</a>
+                    </div>
+                </div>
+
+                <!--arrival2-->
+                <div class="arrivals_card swiper-slide">
+                    <div class="arrivals_image">
+                        <img src="image/Mật_mã_davinci_TT.jpg" alt="">
+                    </div>
+                    <div class="arrivals_tag">
+                        <p>Mật mã Davinci</p>
+                        <p class="writer">Tác giả: Dan Brown</p>
+                        <div class="categories">Thể loại: Hư cấu, Thần bí, Trinh thám</div>
+                        <p class="book_price">70.000đ</p>
+                        <div class="arrivals_icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <a href="#" class="arrivals_btn">Chi tiết</a>
+                    </div>
+                </div>
+
+                <!--arrival3-->
+                <div class="arrivals_card swiper-slide">
+                    <div class="arrivals_image">
+                        <img src="image/xu-cat.jpg" alt="">
+                    </div>
+                    <div class="arrivals_tag">
+                        <p>Xứ cát</p>
+                        <p class="writer">Tác giả: Frank Herbert</p>
+                        <div class="categories">Thể loại: Hư cấu, Khoa học viễn tưởng</div>
+                        <p class="book_price">105.000đ</p>
+                        <div class="arrivals_icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <a href="#" class="arrivals_btn">Chi tiết</a>
+                    </div>
+                </div>
+
+                <!--arrival4-->
+                <div class="arrivals_card swiper-slide">
+                    <div class="arrivals_image">
+                        <img src="image/co-may-thoi-gian.jpg" alt="">
+                    </div>
+                    <div class="arrivals_tag">
+                        <p>Cỗ Máy Thời Gian</p>
+                        <p class="writer">Tác giả: H. G. Wells</p>
+                        <div class="categories">Thể loại: Hư cấu, Khoa học viễn tưởng</div>
+                        <p class="book_price">100.000đ</p>
+                        <div class="arrivals_icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <a href="#" class="arrivals_btn">Chi tiết</a>
+                    </div>
+                </div>
+
+                <!--arrival5-->
+                <div class="arrivals_card swiper-slide">
+                    <div class="arrivals_image">
+                        <img src="image/Haikyuu!!.jpg" alt="">
+                    </div>
+                    <div class="arrivals_tag">
+                        <p>Haikyuu!! C.384</p>
+                        <p class="writer">Tác giả: Haruichi Furudate</p>
+                        <div class="categories">Thể loại: Thể thao, Hài hước, Manga</div>
+                        <p class="book_price">70.000đ</p>
+                        <div class="arrivals_icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <a href="#" class="arrivals_btn">Chi tiết</a>
+                    </div>
+                </div>
+
+                <!--arrival6-->
+                <div class="arrivals_card swiper-slide">
+                    <div class="arrivals_image">
+                        <img src="image/justice_league(2011).jpg" alt="">
+                    </div>
+                    <div class="arrivals_tag">
+                        <p>Justice league (2011) #52</p>
+                        <p class="writer">Tác giả: Geoff Johns</p>
+                        <div class="categories">Thể loại: Phiêu lưu, Hành động, Comic</div>
+                        <p class="book_price">70.000đ</p>
+                        <div class="arrivals_icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <a href="#" class="arrivals_btn">Chi tiết</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </div>
+
+    <!--Footer-->
+    <footer>
+        <div class="footer_main">
+    
+            <div class="tag">
+                <img src="image/logo.jpg">
+            </div>
+    
+            <div class="tag">
+                <h1>Liên Kết Nhanh</h1>
+                    <a href="Trang_chủ.html"><i class="fa-solid fa-house"></i>Trang chủ</a>
+                    <a href="Trinhtham.html"><i class="fa-solid fa-book"></i>Trinh thám</a>
+                    <a href="MC.html"><i class="fa-solid fa-book"></i>Manga/Comic</a>
+                    <a href="Khoahocvientuong.html"><i class="fa-solid fa-book"></i>Khoa học viễn tưởng</a>
+            </div>
+    
+            <div class="tag">
+                <h1>Thông Tin Liên Hệ</h1>
+                    <a href="#"><i class="fa-solid fa-phone"></i>0987195097</a>
+                    <a href="#"><i class="fa-solid fa-phone"></i>0378402036</a>
+                    <a href="#"><i class="fa-solid fa-envelope"></i>hoang.2174802010407@vanlanguni.vn</a>
+                    <a href="#"><i class="fa-solid fa-envelope"></i>vinh.2174802010910@vanlanguni.vn</a>
+            </div>
+    
+            <div class="tag">
+                <h1>Theo Dõi Chúng Tôi</h1>
+                <div class="social-link">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-square-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+    
+            <div class="tag">
+                <h1>Thư Điện Tử</h1>
+                <div class="send">
+                    <form>
+                        <input type="text" placeholder="Your Email ID Here">
+                        <input type="submit" value="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <p class="end">Thiết Kế Bởi<span><i class="fa-solid fa-face-grin"></i>:TEAM 7 CODE</span></p>
+    </footer>
+
+    <!--Link to swiper-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!--Link to js-->
+    <script type="text/javascript" src="js/script.js"></script>
+    
+    <!--Link to btslide-->
+    <script type="text/javascript" src="js/btslide.js"></script>
+
+    
+</body>
+</html>

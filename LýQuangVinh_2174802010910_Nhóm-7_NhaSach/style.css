@@ -1,0 +1,851 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --bg-color: #fff;
+    --text-color: #221314;
+    --second-color: #5a7184;
+    --main-color: #6e54fa;
+    --big-font: 6rem;
+    --h2-font: 3rem;
+    --p-font: 1.1rem;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ff9933;
+    padding: 30px 15%;
+    transition: ease .40s; 
+}
+
+.logo img{
+    width: 100px;
+    cursor: pointer;
+    margin: 8px 0;
+    border-radius: 20px;
+}
+
+.navbar{
+    display: flex;
+}
+
+.navbar a{
+    color: var(--bg-color);
+    font-size: var(--p-font);
+    padding: 10px 22px;
+    border-radius: 4px;
+    transition: ease .40s;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    background: var(--bg-color);
+    color: #ff9933;
+    box-shadow: var(--bg-color);
+    border-radius: 4px;
+}
+
+.container{
+    display: flex;
+}
+
+.search-bar{
+  width: 100%;
+  max-width: 700px;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  border-radius: 60px;
+  padding: 5px 10px;
+}
+
+.search-bar input[type=text]{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 5px 10px;
+    font-size: 12px;
+    color: var(--bg-color);
+}
+
+.search-bar button i{
+  width: 25px;
+}
+
+.search-bar button{
+    background: #ffcc99;
+    border: 0;
+    border-radius: 40%;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
+
+.search-bar button:hover {
+    background: #fff2e6;
+}
+
+.container .login{
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+}
+
+.container .login i{
+    color: #089da1;
+}
+
+.container .login i:hover{
+    color: var(--bg-color);
+}
+
+.container .cart{
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+}
+
+.container .cart i{
+    color: #089da1;
+}
+
+.container .cart i:hover{
+    color: var(--bg-color);
+}
+
+#menu-icon{
+    color: var(--text-color);
+    font-size: 35px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+    position: relative;
+}
+
+
+                                          /* Header sticky*/
+
+header.sticky{
+    background: #ff9933;
+    padding: 10px 15%;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px; 
+}
+
+                                                /*Phần giữa*/
+
+section{
+    padding: 80px 15%;
+}
+
+section .main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 30px;
+    right: 150px;
+}
+
+section .main h1{
+    position: relative;
+    font-size: 55px;
+    top: 80px;
+    left: 20px;
+}
+
+section .main h1 span{
+    color: #ff9933;
+}
+
+section .main p{
+    width: 600px;
+    text-align: justify;
+    line-height: 22px;
+    position: relative;
+    top: 125px;
+    left: 20px;
+}
+
+section .main .main_tag .main_btn{
+    background: #ff9933;
+    padding: 10px 20px;
+    position: relative;
+    top: 200px;
+    left: 20px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 40px;
+}
+
+section .main .main_tag .main_btn:hover{
+    background: #ff8000;
+    transform: scale(1.1);
+}
+
+section .main .main_img img{
+    width: 780px;
+    position: relative;
+    top: 90px;
+    left: 20px;
+}
+
+                                          /* phần giữa website*/
+                                          /* Dịch vụ*/
+.services{
+  width: 100%;
+  height: auto;
+  margin: 35px 0;
+}
+
+.services .services_box{
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 80px 50px;
+}
+
+.services .services_box .services_card{
+  text-align: center;
+  width: 310px;
+  height: auto;
+  box-shadow: 0 0 8px #ff9933;
+  padding: 15px 10px;
+  border-radius: 40px;
+}
+
+.services .services_box .services_card i{
+  color: #ff9933;
+  font-size: 45px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.services .services_box .services_card h3{
+  margin-bottom: 10px;
+}
+
+
+
+
+
+                                          /* Giới thiệu*/
+.about{
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.about .about_image img{
+  width: 600px;
+  height: 600px;
+  border-radius: 20px;
+}
+
+.about .about_tag h1{
+  font-size: 50px;
+  position: relative;
+  bottom: 35px;
+}
+
+.about .about_tag p{
+  line-height: 22px;
+  width: 600px;
+  text-align: justify;
+  margin-bottom: 15px;
+}
+.about .about_tag .about_btn{
+  padding: 10px 20px;
+  background: #ff9933;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  top: 50px;
+  border-radius: 40px;
+}
+
+.about .about_tag .about_btn:hover{
+  background: #ff8000;
+}
+
+                                          /* Sách nổi bật*/
+
+.featured_books{
+  width: 100%;
+  height: 75ch;
+  padding: 0;
+}
+
+.featured_books h1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  font-size: 45px;
+  margin-top: 20px;
+}
+
+.featured_books .featured_book_box{
+  max-width: 80%;
+  height: 70vh;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+
+.featured_books .featured_book_box .featured_book_card{
+  width: 250px;
+  height: 490px;
+  text-align: center;
+  padding: 5px;
+  border: 1px solid #919191;
+  border-radius: 40px;
+}
+
+
+.featured_books .featured_book_box .featured_book_card:hover{
+  box-shadow: 0 0 5px #ff9933;
+}
+
+.featured_books .featured_book_box .featured_book_card .featured_book_img{
+  margin-top: 5px;
+}
+
+.featured_books .featured_book_box .featured_book_card .featured_book_img img{
+  width: 150px; 
+  height: 250px;
+  border-radius: 20px;
+}
+
+.featured_books .featured_book_box .featured_book_card .featured_book_tag h2{
+  margin: 12px;
+}
+
+.featured_books .featured_book_box .featured_book_card .featured_book_tag .writer{
+  color: #919191;
+}
+
+.featured_books .featured_book_box .featured_book_card .featured_book_tag .categories{
+  color: #ff9933;
+  margin-top: 8px;
+}
+
+.featured_books .featured_book_box .featured_book_card .featured_book_tag .book_price{
+  margin-top: 8px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.featured_books .featured_book_box .featured_book_card .featured_book_tag .featured_book_icon{
+  color: #ff9933;
+  margin-bottom: 19px;
+}
+
+.featured_books .featured_book_box .featured_book_card .featured_book_tag .f_btn{
+  padding: 8px 20px;
+  border: 2px solid #ff9933;
+  border-radius: 40px;
+  text-decoration: none;
+  color: #000;
+}
+
+.featured_books .featured_book_box .featured_book_card .featured_book_tag .f_btn:hover{
+  background: #ff9933;
+  color: #fff;
+}
+
+
+
+
+::-webkit-scrollbar{
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track{
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar-thumb{
+  background: #089da1;
+  border-radius: 10px;
+}
+
+                                          /* Sách mới*/
+.arrivals{
+  width: 100%;
+  height: 100vh;
+  margin-bottom: 5px;
+}
+
+.arrivals h1{
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.arrivals .arrivals_box{
+  width: 80%;
+  height: 70vh;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 25px 0;
+}
+
+.arrivals .arrivals_box .arrivals_card{
+  width: 250px;
+  height: 480px;
+  text-align: center;
+  padding: 5px;
+  border: 1px solid #919191;
+  border-radius: 40px;
+}
+
+.arrivals .arrivals_box .arrivals_card:hover{
+  box-shadow: 0 0 5px #ff9933;
+}
+
+.arrivals .arrivals_box .arrivals_card .arrivals_image{
+  width: 150px;
+  height: 250px;
+  margin: 0 auto;
+  cursor: pointer;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+.arrivals .arrivals_box .arrivals_card .arrivals_image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: 0.3s;
+}
+
+.arrivals .arrivals_box .arrivals_card:hover .arrivals_image img{
+  transform: scale(1.1);
+}
+
+.arrivals .arrivals_box .arrivals_card .arrivals_tag p{
+  font-family: queen of camelot;
+  font-size: 20px;
+  margin: 8px 0;
+}
+
+.arrivals .arrivals_box .arrivals_card .arrivals_tag .writer{
+  color: #919191;
+}
+
+.arrivals .arrivals_box .arrivals_card .arrivals_tag .categories{
+  color: #ff9933;
+  margin-top: 8px;
+}
+
+.arrivals .arrivals_box .arrivals_card .arrivals_tag .book_price{
+  margin-top: 8px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.arrivals .arrivals_box .arrivals_card .arrivals_tag .arrivals_icon{
+  color: #ff9933;
+  margin-bottom: 19px;
+}
+
+.arrivals .arrivals_box .arrivals_card .arrivals_tag .arrivals_btn{
+  padding: 8px 20px;
+  border: 2px solid #ff9933;
+  border-radius: 40px;
+  text-decoration: none;
+  color: #000;
+}
+
+.arrivals .arrivals_box .arrivals_card .arrivals_tag .arrivals_btn:hover{
+  background: #ff9933;
+  color: #fff;
+}
+
+::-webkit-scrollbar{
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track{
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar-thumb{
+  background: #089da1;
+  border-radius: 10px;
+}
+
+
+                                          /* phần chân website*/
+footer{
+  width: 100%;
+  background: #ffbf80;
+}
+
+footer .footer_main{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer .footer_main .tag{
+  margin: 10px 0;
+}
+
+footer .footer_main .tag img{
+  width: 100px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
+
+footer .footer_main .tag p{
+  width: 250px;
+  line-height: 22px;
+  text-align: justify;
+}
+
+footer .footer_main .tag h1{
+  font-size: 25px;
+  margin: 25px 0;
+  color: var(--bg-color);
+}
+
+footer .footer_main .tag a{
+  display: block;
+  color: black;
+  text-decoration: none;
+  margin: 20px 0;
+}
+
+footer .footer_main .tag a:hover{
+    background: var(--bg-color);
+    color: #ff9933;
+    box-shadow: var(--bg-color);
+    border-radius: 4px;
+}
+
+footer .footer_main .tag .social_link i{
+  margin: 0 5px;
+}
+
+footer .footer_main .tag .send form{
+  max-width: 100%;
+  width: 300px;
+  position: relative;
+}
+
+footer .footer_main .tag .send form input:first-child{
+    display: inline-block;
+    width: 100%;
+    padding: 20px 150px 20px 30px;
+    box-shadow: 5px 10px 30px rgb(85, 85, 85 / 20%);
+    outline: none;
+    border: none;
+    border-radius: 15px;
+}
+
+footer .footer_main .tag .send form input:last-child{
+    display: inline-block;
+    position: absolute;
+    outline: none;
+    border: none;
+    padding: 14px 30px;
+    background: #089da1;
+    border-radius: 15px;
+    color: #fff;
+    cursor: pointer;
+    top: 6px;
+    right: 6px;
+}
+
+footer .end{    
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  color: #000;
+}
+
+footer .end span{
+  color: #089da1;
+  margin-left: 10px;
+}
+
+
+                                          /* responsive*/
+
+                                          /* 1450px*/                                          
+@media (max-width: 1450px){
+  header{
+    padding: 17px 3%;
+    transition: .2s;
+  }
+
+  header.sticky{
+    padding: 10px 3%;
+    transition: .2s;
+  }
+
+  section{
+    padding: 30px 3%;
+    transition: .2s;
+  }
+
+  section .main p{
+    width: 400px;
+  }
+
+  section .main .main_img img{
+    width: 580px;
+    transition: .2s;
+  }
+
+  section .main .main_tag .main_btn{
+    top: 150px;
+    transition: .2s;
+  }
+
+  .services .services_box .services_card{
+    margin-top: 50px;
+    width: 210px;
+    padding: 25px 20px;
+    transition: .2s;
+  }
+
+  .about .about_image img{
+    width: 500px;
+    height: 500px;
+    transition: .2s;
+  }
+
+  .about .about_tag p{
+    line-height: 22px;
+    width: 400px;
+    text-align: justify;
+    margin-bottom: 15px;
+  }
+
+  .footer_main{
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 30%;
+    padding: 0 30px;
+    margin-bottom: 150px;
+    transition: .2s;
+  }
+
+  :root{
+    --big-font: 4.5rem;
+    --h2-font: 2.3rem;
+    --p-font: 1rem;
+    transition: .2s;
+  }
+}
+
+                                          /* 1040px*/   
+@media (max-width: 1040px){
+  #menu-icon{
+    display: block;
+    color: #fff;
+  }
+  .sticky #menu-icon{
+    color: var(--bg-color);
+  }
+  .main{
+    height: 88vh;
+  }
+
+  section .main{
+    display: grid;
+    grid-template-columns: 1fr;
+    transition: .2s;
+  }
+
+  section .main .main_img img{
+    transition: .2s;
+    top: 110px;
+  }
+
+  .services .services_box .services_card{
+    width: 190px;
+    transition: .2s;
+  }
+
+  .services .services_box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 40px;
+    grid-gap: 25px 0;
+    transition: .2s;
+    height: 70%;   
+  }
+
+  .services .services_box .services_card i{
+    font-size: 25px;
+  }
+
+  .services .services_box .services_card h3{
+    font-size: 20px;
+  }
+
+  .services .services_box .services_card p{
+    font-size: 15px;
+  }
+
+  .about{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 25px 0;
+    margin-left: 40px;
+  }
+
+  .about .about_image img{
+    margin-bottom: 20px;
+    
+  }
+
+  .about .about_tag .about_btn{
+    top: 20px;
+  }
+
+  .navbar{
+    position: absolute;
+    top: 0;
+    right: -100%;
+    width: 270px;
+    height: 120vh;
+    background: #ff9933;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 150px 30px;
+    transition: 0.5s all;
+  }
+  .navbar a{
+    display: block;
+    margin: 1.2rem 0;
+  }
+
+  .open{
+    right: 0;
+  }
+
+  footer .footer_main{
+    width: 100%;
+    display: flex;
+    margin-bottom: 12px;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+}
+
+                                          /* 480px*/
+
+@media (max-width: 480px){
+  section .main .main_tag h1{
+    font-size: 30px;
+    text-align: center;
+  }
+
+  section .main .main_img img{
+    transition: .2s;
+    top: 120px;
+    width: 380px;
+    margin-left: 35px;
+  }
+
+  section .main p{
+    text-align: center;
+    margin-left: 30px;
+  }
+
+  section .main .main_tag .main_btn{
+    margin-left: 180px;
+    transition: .2s;
+  }
+
+  .logo img{
+    width: 60px;
+  }
+
+  .services .services_box .services_card{
+    width: 170px;
+    transition: .2s;
+    margin-left: 50px;
+  }
+
+  .services .services_box .services_card i{
+    font-size: 20px;
+  }
+
+  .services .services_box .services_card h3{
+    font-size: 10px;
+  }
+
+  .services .services_box .services_card p{
+    font-size: 10px;
+  }
+
+  .about .about_image img{
+    width: 300px;
+    height: 300px;
+    transition: .2s;
+    margin-left: 60px;
+  }
+
+  .about .about_tag h1{
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .about .about_tag .about_btn{
+    margin-left: 160px;
+  }
+
+  .featured_books{
+    margin: 30px;
+  }
+  
+  .featured_books .featured_book_box{
+    height: 80vh;
+  }
+
+  .arrivals{
+    margin: 30px;
+  }
+
+  .arrivals .arrivals_box{
+    height: 80vh;
+  }
+
+  footer{
+    width: 100%;
+  }
+}
